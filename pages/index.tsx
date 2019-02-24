@@ -4,7 +4,7 @@ import Layout from '../src/components/Layout';
 
 const Index = (props: any) => {
 	return (
-		<div>
+		<div className="nextAsync__wrapper">
 			<Layout>
 				<p>Hello Next.js</p>
 				<ul>
@@ -18,6 +18,33 @@ const Index = (props: any) => {
 						)
 					})}
 				</ul>
+				<style jsx global>{`
+					h1, a {
+						font-family: "Arial";
+					}
+
+					ul {
+						padding: 0;
+					}
+
+					li {
+						list-style: none;
+						margin: 5px 0;
+					  }
+				
+					  a {
+						text-decoration: none;
+						color: blue;
+					  }
+				
+					  a:hover {
+						opacity: 0.6;
+					  }
+
+					  .nextAsync__wrapper {
+						  border: 1px solid #e0e0e0;
+					  }
+				`}</style>
 			</Layout>
 		</div>
 	)
